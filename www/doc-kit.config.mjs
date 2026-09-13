@@ -61,6 +61,9 @@ export default {
   html: {
     title: '{project} documentation',
 
+    // The Node.js brand palette, replacing the project-neutral grey default.
+    stylesheets: [join(REPO, 'packages', 'node', 'src', 'config', 'theme.css')],
+
     // Pages are assembled into `www/content/` at build time, so there is no
     // single source file a `{path}` template could point at. Link to the repo
     // instead; a per-page link would need a `#theme/Metabar` override that maps
